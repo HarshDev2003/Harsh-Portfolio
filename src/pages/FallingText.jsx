@@ -3,7 +3,7 @@ import Matter from "matter-js";
 
 const FallingText = ({
   text = "Hello",
-  highlightWords = [],
+  highlightWords = [library],
   trigger = "auto",
   backgroundColor = "transparent",
   wireframes = false,
@@ -25,7 +25,7 @@ const FallingText = ({
       .map((word) => {
         const isHighlighted = highlightWords.some((hw) => word.startsWith(hw));
         return `<span
-          class="inline-block mx-[2px] select-none ${isHighlighted ? "text-cyan-500 font-bold" : ""
+          class="inline-block mx-[2px] select-none ${isHighlighted ? "text-[#F87817] font-bold" : ""
           }"
         >
           ${word}

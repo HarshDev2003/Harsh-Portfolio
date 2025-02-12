@@ -49,13 +49,18 @@ function App() {
             <>
               <NavbarDefault />
               <FallingText
-                text={`React Bits is a library of animated and interactive React components designed to streamline UI development and simplify your workflow.`}
+                text={`A passionate Software Engineer and Freelancer with Expertise in Full-stack Development, crafting high-performance Web Apps and intuitive user experiences.`}
                 highlightWords={[
-                  "React",
-                  "Bits",
-                  "animated",
-                  "components",
-                  "simplify",
+                  "Harsh",
+                  "Software",
+                  "Freelancer",
+                  "Expertise",
+                  "Full",
+                  "stack",
+                  "Web",
+                  "Apps",
+                  "Engineer",
+                  "Development"
                 ]}
                 highlightClass="highlighted"
                 trigger="hover"

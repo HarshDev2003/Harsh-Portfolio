@@ -6,6 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { Link } from "react-router";
  
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -38,9 +39,10 @@ export function NavbarDefault() {
           />
         </svg>
  
-        <a href="#" className="flex items-center">
-          Pages
-        </a>
+        <Link to ="/preloader" className="flex items-center">
+          Preloader
+        </Link>
+        
       </Typography>
       <Typography
         as="li"
@@ -62,9 +64,9 @@ export function NavbarDefault() {
             fill="#90A4AE"
           />
         </svg>
-        <a href="#" className="flex items-center">
-          Account
-        </a>
+        <Link to ="/timeline" className="flex items-center">
+          Timeline
+        </Link>
       </Typography>
       <Typography
         as="li"

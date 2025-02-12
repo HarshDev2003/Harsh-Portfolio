@@ -4,7 +4,7 @@ import { NavbarDefault } from "./components/Navbar";
 import Home from "./pages/Home";
 import TrueFocus from "./components/Preloader";
 import Steps from "./pages/Steps";
-
+import FallingText from "./pages/FallingText";
 
 function App() {
   return (
@@ -34,12 +34,37 @@ function App() {
             </>
           }
         />
-         <Route
+        <Route
           path="/timeline"
           element={
             <>
-            <NavbarDefault />
-            <Steps />
+              <NavbarDefault />
+              <Steps />
+            </>
+          }
+        />
+        <Route
+          path="/falling-text"
+          element={
+            <>
+              <NavbarDefault />
+              <FallingText
+                text={`React Bits is a library of animated and interactive React components designed to streamline UI development and simplify your workflow.`}
+                highlightWords={[
+                  "React",
+                  "Bits",
+                  "animated",
+                  "components",
+                  "simplify",
+                ]}
+                highlightClass="highlighted"
+                trigger="hover"
+                backgroundColor="transparent"
+                wireframes={false}
+                gravity={0.56}
+                fontSize="2rem"
+                mouseConstraintStiffness={0.9}
+              />
             </>
           }
         />
